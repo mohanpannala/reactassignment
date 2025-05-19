@@ -34,8 +34,8 @@ function ExpenseCard({ expense, onDelete, onUpdate }) {
           </div>
           <p>{expense.category} | {expense.date}</p>
           <div className="card-actions">
-            <button onClick={() => setIsEditing(true)}>✏️</button>
-            <button onClick={() => onDelete(expense.id)}>🗑️</button>
+            <button onClick={() => setIsEditing(true)}>Edit</button>
+            <button onClick={() => onDelete(expense.id)}>Delete</button>
           </div>
           </div>
         </>
